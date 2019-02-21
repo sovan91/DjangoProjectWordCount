@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Project on Django</title>
+</head>
+<body>
+<h1> Django web project form</h1>
+<form action="{% url 'count'%}">
+    <textarea  name="fullmessage" cols=40 rows=10></textarea>
+    <br>
+    <input type="submit" value="count"/>
+</form>
+</body>
+</html>

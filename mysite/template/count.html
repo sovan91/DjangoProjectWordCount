@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counting words</title>
+</head>
+<body>
+<h1>Counted</h1>
+{{ fullmessage }}
+
+<br>
+<h2>Total words count</h2>
+total_words={{ words }}
+<br/>
+<br/>
+<h2>Each words count</h2>
+{% for word,value in worddictionary %}
+<br/>
+{{word}} = {{value}}
+<br/>
+{% endfor %}
+</body>
+</html>
